@@ -1,0 +1,26 @@
+.wrapper {
+    display: grid;
+    grid-template-areas: "a a a a" "b b b b" "c c c c" "d d d d";
+    justify-items: center;
+    margin-top: 50px;
+    margin-left: 90px;
+    margin-right: 150px;
+}
+
+.column {
+    width: 350px;
+    height: 350px;
+    margin-bottom: 50px;
+}
+
+.search {
+    border-color: gray;
+    height: 50px;
+    width: 450px;
+    margin-top: 40px;
+    margin-left: 38%;
+}
+
+div figure figcaption {
+    display: none;
+}
