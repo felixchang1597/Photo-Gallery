@@ -44,12 +44,11 @@ function myFunction() {
     var input, filter, image, a, i, txtValue;
     input = document.getElementById('myInput').toUpperCase;
     filter = input.value.toUpperCase();
-    image = document.getElementsByTagName("img");
-    figcaption = image.getElementsByTagName('figcaption');
+    image = document.getElementsByTagName("a");
 
     // Loop through all list items, and hide those who don't match the search query
-    for (i = 0; i < figcaption.length; i++) {
-        a = figcaption[i];
+    for (i = 0; i < image.length; i++) {
+        a = image[i].attributes[1].textContent;
         if (!a.innerText.toUpperCase.includes(input)) {
             image[i].style.display = "none";
         } else {
